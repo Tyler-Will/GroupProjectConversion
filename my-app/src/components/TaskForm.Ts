@@ -27,7 +27,7 @@ export default function TaskForm({onAdd}) {
   //   setTaskName('');
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onsubmit={handleFormSubmit}>
       <button>+</button>
       <input type="text"
              value={description}

@@ -10,7 +10,7 @@ function App() {
   const [tasks,setTasks] = useState([]);
   const [description,setDescription] = useState('');
 
-  const handleEnter = (e: any) => {
+  const handleEnter = (e) => {
     console.log(this.todo_id)
     if (e.key === 'Enter'){
       renameTask(tasks.todo_id) 
@@ -20,7 +20,7 @@ function App() {
 
   //Read
 
-  const getTodos = async (name: any) => {
+  const getTodos = async (name) => {
     try {
       const response = await fetch('http://localhost:5000/todo');
       const jsonData = await response.json();
